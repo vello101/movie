@@ -2,7 +2,7 @@
   <div class="app">
     <header>
       <h1>The <strong>Movie</strong> Database</h1>
-      <form class="search-box" v-on:submit="handleSearch">
+      <form class="search-box" v-on:submit.prevent="handleSearch">
         <input type="search" class="search-field" placeholder="찾을 영화를 입력해주세요"
         v-model="search_query">
         <!-- search가 text와 다른 점: 끝에 X눌러서 취소할 수 있음 -->
